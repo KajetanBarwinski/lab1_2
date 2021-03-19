@@ -41,6 +41,14 @@ public class Invoice {
         this.gros = Money.ZERO;
     }
 
+    public Invoice(ClientData client, Money net, Money gros, List<InvoiceLine> items, Id id) {
+        this.client = client;
+        this.net = net;
+        this.gros = gros;
+        this.items = items;
+        this.id = id;
+    }
+
     public void addItem(InvoiceLine item) {
         items.add(item);
 

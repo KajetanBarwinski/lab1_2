@@ -26,15 +26,15 @@ public class PaymentFactory {
         return new Payment(aggregateId,clientData,amount);
     }
 
-    public void SetAggregateId(Id aggregateId){
+    public void setAggregateId(Id aggregateId){
         this.aggregateId=aggregateId;
     }
 
-    public void SetAmount(Money amount){
+    public void setAmount(Money amount){
         this.amount=amount;
     }
 
-    public void SetClientData(ClientData clientData){
+    public void setClientData(ClientData clientData){
         this.clientData=clientData;
     }
 
